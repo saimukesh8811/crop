@@ -5,31 +5,81 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crop Prediction App</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: #008080;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #555;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #008080;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        p {
+            margin-top: 20px;
+            font-weight: bold;
+            color: #008080;
+        }
+    </style>
 </head>
 <body>
     <h1>Crop Prediction App</h1>
     
     <form action="/predict" method="post">
         <label for="N">Nitrogen (N):</label>
-        <input type="text" name="N" required><br>
+        <input type="text" name="N" required>
 
         <label for="P">Phosphorus (P):</label>
-        <input type="text" name="P" required><br>
+        <input type="text" name="P" required>
 
         <label for="K">Potassium (K):</label>
-        <input type="text" name="K" required><br>
+        <input type="text" name="K" required>
 
         <label for="temperature">Temperature:</label>
-        <input type="text" name="temperature" required><br>
+        <input type="text" name="temperature" required>
 
         <label for="humidity">Humidity:</label>
-        <input type="text" name="humidity" required><br>
+        <input type="text" name="humidity" required>
 
         <label for="ph">pH:</label>
-        <input type="text" name="ph" required><br>
+        <input type="text" name="ph" required>
 
         <label for="rainfall">Rainfall:</label>
-        <input type="text" name="rainfall" required><br>
+        <input type="text" name="rainfall" required>
 
         <input type="submit" value="Predict">
     </form>
